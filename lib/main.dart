@@ -1,18 +1,21 @@
+import 'package:common/button.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const ChatPayScreen());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class ChatPayScreen extends StatelessWidget {
+  const ChatPayScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+        body: Column(
+          children: [
+            Button()
+          ],
         ),
       ),
     );
